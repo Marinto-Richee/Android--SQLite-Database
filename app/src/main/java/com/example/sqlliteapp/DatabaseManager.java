@@ -37,5 +37,12 @@ public class DatabaseManager {
         }
         return cursor;
     }
+    public int update(long _id,String username,String password){
+        ContentValues contentValues=new ContentValues();
+        contentValues.put(DatabaseHelper.USER_NAME,username);
+        contentValues.put(DatabaseHelper.USER_PASSWORD,password);
+        int ret = database.update(DatabaseHelper.DATABASE_TABLE,contentValues,DatabaseHelper.USER_ID+"="+_id,null);
+        return ret;
+    }
 
 }
