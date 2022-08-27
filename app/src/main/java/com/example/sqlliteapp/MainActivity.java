@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 @SuppressLint("Range") String ID=cursor.getString(cursor.getColumnIndex(DatabaseHelper.USER_ID));
                 @SuppressLint("Range") String username=cursor.getString(cursor.getColumnIndex(DatabaseHelper.USER_NAME));
                 @SuppressLint("Range") String password=cursor.getString(cursor.getColumnIndex(DatabaseHelper.USER_PASSWORD));
-                Log.i("DATABASE_TAG","I have read ID : "+ID+" Username : "+username+" password :"+password);
+                Log.i("DATABASE_TAG","I have read ID : "+ID+" Username : "+username+" password : "+password);
             }while(cursor.moveToNext());
         }
     }
