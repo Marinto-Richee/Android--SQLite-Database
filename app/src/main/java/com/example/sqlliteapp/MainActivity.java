@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void btnFetchPressed(View v){
         Cursor cursor=dbManager.fetch();
+        //test
 
     }
 
