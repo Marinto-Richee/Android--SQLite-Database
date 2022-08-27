@@ -44,5 +44,9 @@ public class DatabaseManager {
         int ret = database.update(DatabaseHelper.DATABASE_TABLE,contentValues,DatabaseHelper.USER_ID+"="+_id,null);
         return ret;
     }
+    public void delete(long id){
+        database.delete(DatabaseHelper.DATABASE_TABLE,DatabaseHelper.USER_ID,null);
+
+    }
 
 }
