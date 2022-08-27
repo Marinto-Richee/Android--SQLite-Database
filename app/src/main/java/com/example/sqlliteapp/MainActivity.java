@@ -55,6 +55,4 @@ public class MainActivity extends AppCompatActivity {
     public void btnDeletePressed(View v){
         dbManager.delete(Long.parseLong(editUserID.getText().toString()));
     }
-    //test
-    //test1
 }
